@@ -3,8 +3,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const careerAnalysisService = require('./services/careerAnalysisService');
-const careerMatchingService = require('./services/careerMatchingService');
+const careerAnalysisService = require('./careerAnalysisService');
+const careerMatchingService = require('./careerMatchingService');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -83,6 +83,7 @@ app.listen(PORT, () => {
   console.log(`📍 Health check: http://localhost:${PORT}/health`);
   console.log(`📊 API endpoint: http://localhost:${PORT}/api/analyze-career`);
 });
+
 
 
 
