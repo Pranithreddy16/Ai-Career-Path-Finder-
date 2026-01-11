@@ -203,13 +203,9 @@ ht/
 - [ ] Job market data integration
 - [ ] Learning resource recommendations
 
-## License
+## Author 
+Pranith Reddy
 
-MIT
-
-## Support
-
-For issues or questions, please contact: support@careercopilot.app
 
 
 
