@@ -1,0 +1,74 @@
+═══════════════════════════════════════════════════════════
+   HOW TO RUN BACKEND SERVER IN COMMAND PROMPT (CMD)
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Open Command Prompt
+   • Press Windows Key + R
+   • Type: cmd
+   • Press Enter
+   OR
+   • Press Windows Key
+   • Type: cmd
+   • Press Enter
+
+STEP 2: Navigate to Your Project Folder
+   • In the cmd window, type:
+     cd C:\Users\donth\OneDrive\Desktop\ht
+   • Press Enter
+
+STEP 3: Start the Server
+   • Type:
+     npm start
+   • Press Enter
+
+STEP 4: You Should See:
+   🚀 Career Copilot Backend Server running on port 3000
+   📍 Health check: http://localhost:3000/health
+   📊 API endpoint: http://localhost:3000/api/analyze-career
+
+STEP 5: Keep CMD Window Open!
+   • The server is now running
+   • DON'T close the cmd window
+   • To stop server: Press Ctrl + C
+
+═══════════════════════════════════════════════════════════════
+   EXAMPLE - What You'll See in CMD:
+═══════════════════════════════════════════════════════════════
+
+C:\Users\donth>cd C:\Users\donth\OneDrive\Desktop\ht
+
+C:\Users\donth\OneDrive\Desktop\ht>npm start
+
+> career-copilot-backend@1.0.0 start
+> node server.js
+
+🚀 Career Copilot Backend Server running on port 3000
+📍 Health check: http://localhost:3000/health
+📊 API endpoint: http://localhost:3000/api/analyze-career
+
+═══════════════════════════════════════════════════════════════
+   IF YOU GET ERRORS:
+═══════════════════════════════════════════════════════════════
+
+Error: "npm is not recognized"
+   → Install Node.js: https://nodejs.org/
+   → Restart cmd after installation
+
+Error: "Cannot find module"
+   → First run: npm install
+   → Then run: npm start
+
+Error: "Port 3000 already in use"
+   → Close other programs using port 3000
+   → Or restart your computer
+
+═══════════════════════════════════════════════════════════════
+   TO STOP THE SERVER:
+═══════════════════════════════════════════════════════════════
+
+   • In the cmd window, press: Ctrl + C
+   • Type "Y" if asked to confirm
+   • Server will stop
+
+═══════════════════════════════════════════════════════════════
+

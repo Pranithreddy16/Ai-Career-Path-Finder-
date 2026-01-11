@@ -1,0 +1,60 @@
+═══════════════════════════════════════════════════════════
+   HOW TO TURN ON BACKEND SERVER - SIMPLE STEPS
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Open Command Prompt or PowerShell
+   • Press Windows Key + R
+   • Type: cmd
+   • Press Enter
+
+STEP 2: Go to Your Project Folder
+   • Type this command and press Enter:
+     cd C:\Users\donth\OneDrive\Desktop\ht
+
+STEP 3: Start the Server
+   • Type this command and press Enter:
+     npm start
+
+STEP 4: You Should See This Message:
+   🚀 Career Copilot Backend Server running on port 3000
+   📍 Health check: http://localhost:3000/health
+   📊 API endpoint: http://localhost:3000/api/analyze-career
+
+STEP 5: Keep the Window Open!
+   • DON'T close the terminal window
+   • The server runs in that window
+   • To stop: Press Ctrl + C
+
+═══════════════════════════════════════════════════════════════
+   QUICK COPY-PASTE COMMANDS:
+═══════════════════════════════════════════════════════════════
+
+cd C:\Users\donth\OneDrive\Desktop\ht
+npm start
+
+═══════════════════════════════════════════════════════════════
+   VERIFY IT'S WORKING:
+═══════════════════════════════════════════════════════════════
+
+1. Open your web browser
+2. Go to: http://localhost:3000/health
+3. You should see: {"status":"ok","message":"Career Copilot API is running"}
+
+═══════════════════════════════════════════════════════════════
+   TROUBLESHOOTING:
+═══════════════════════════════════════════════════════════════
+
+If "npm" is not recognized:
+   → Install Node.js from: https://nodejs.org/
+   → Restart your computer after installation
+
+If port 3000 is busy:
+   → Close other programs using port 3000
+   → Or change port in .env file
+
+If you see "Cannot find module":
+   → Run this first: npm install
+   → Then run: npm start
+
+═══════════════════════════════════════════════════════════════
+

@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Career Copilot - Bridging Skills to Careers</title>
+    <meta name="description" content="Learn how Career Copilot uses AI to solve the student career confusion problem with personalized guidance and real job matching.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                        accent: '#10B981'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans text-gray-900 bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
+
+    <!-- Header (same as index) -->
+    <!-- Copy-paste header from index.html -->
+    <!-- START HEADER -->
+    <!-- (for brevity here, reuse the exact header block from index.html) -->
+    <!-- END HEADER -->
+
+    <!-- About Hero -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-900 via-primary to-secondary bg-clip-text text-transparent mb-6">
+                Bridging the Gap Between Skills and Careers
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Career Copilot exists because students have skills but lack clear guidance on how those skills map to real, in-demand job roles.
+            </p>
+        </div>
+    </section>
+
+    <!-- Problem & Solution -->
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Why Students Struggle</h2>
+                <div class="space-y-6 text-gray-700">
+                    <p>Many students feel lost because they know they can code, design, or analyze data but cannot see which roles actually match them.</p>
+                    <p>Traditional counseling relies on long static tests and generic recommendations that ignore portfolios, projects, and behavior.</p>
+                    <p>As a result, students waste semesters on misaligned paths, lose confidence, and struggle with employability.</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="images/hero-bg.jpg" alt="Students exploring career options" class="rounded-3xl shadow-2xl w-full">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Our Approach</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Behavior-Aware</h3>
+                    <p class="text-gray-600">We use interactive micro-challenges to understand how you actually think and solve problems, not just what you click on a quiz.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Skill-to-Role Graph</h3>
+                    <p class="text-gray-600">A knowledge graph connects skills, roles, tools, and industries, making recommendations transparent and explainable.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Living Roadmaps</h3>
+                    <p class="text-gray-600">Your roadmap updates as you complete projects, courses, or internships, so guidance grows with you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index) -->
+    <!-- Copy-paste footer from index.html -->
+
+    <!-- AI Chat Button -->
+    <button id="ai-chat-button-fallback" style="display: none;" class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full shadow-2xl flex items-center justify-center text-white text-2xl hover:shadow-3xl hover:scale-110 transition-all duration-300 cursor-pointer border-none" onclick="document.querySelector('[data-ai-chat-button]')?.click() || (typeof openAIChat === 'function' && openAIChat())" title="Ask AI Career Assistant">
+        💬
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
