@@ -29,13 +29,7 @@ A backend API system that analyzes user messages to find personalized career pat
    npm install
    ```
 
-3. **Set up environment variables** (optional)
-   ```bash
-   cp .env.example .env
-   ```
-   Edit `.env` if you need to change the port (default is 3000).
-
-4. **Start the server**
+3. **Start the server**
    ```bash
    npm start
    ```
@@ -45,7 +39,7 @@ A backend API system that analyzes user messages to find personalized career pat
    npm run dev
    ```
 
-5. **Verify the server is running**
+4. **Verify the server is running**
    - Open http://localhost:3000/health
    - You should see: `{"status":"ok","message":"Career Copilot API is running"}`
 
@@ -70,68 +64,6 @@ Returns server status.
 POST /api/analyze-career
 ```
 Analyzes a user message and returns career path recommendations.
-
-**Request Body:**
-```json
-{
-  "message": "I'm a student learning Python and interested in data analysis. I want to work with machine learning.",
-  "userId": "optional-user-id"
-}
-```
-
-**Response:**
-```json
-{
-  "success": true,
-  "data": {
-    "analysis": {
-      "extractedSkills": ["programming", "data"],
-      "interests": ["technology", "research"],
-      "goals": ["learning", "job"],
-      "experienceLevel": "beginner"
-    },
-    "careerPaths": [
-      {
-        "id": "data-scientist",
-        "title": "Data Scientist",
-        "description": "Analyze complex data to extract insights...",
-        "matchPercentage": 85,
-        "salaryRange": "$80,000 - $180,000",
-        "growth": "Very High",
-        "learningPath": [
-          "Learn Python and data libraries...",
-          "Study statistics and mathematics..."
-        ],
-        "whyMatch": "Your skills in programming, data align with this role..."
-      }
-    ],
-    "message": "Career paths found successfully"
-  }
-}
-```
-
-### 3. Get All Careers
-```
-GET /api/careers
-```
-Returns all available career paths in the database.
-
-**Response:**
-```json
-{
-  "success": true,
-  "data": [
-    {
-      "id": "backend-developer",
-      "title": "Backend Developer",
-      "description": "Build server-side applications...",
-      "requiredSkills": ["programming"],
-      "salaryRange": "$60,000 - $150,000",
-      "growth": "High"
-    }
-  ]
-}
-```
 
 ## How It Works
 
@@ -205,6 +137,7 @@ ht/
 
 ## Author 
 Pranith Reddy
+
 
 
 
