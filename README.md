@@ -1,4 +1,4 @@
-# Career Copilot 
+# Career Path Finder
 
 A backend API system that analyzes user messages to find personalized career paths based on skills, interests, and goals.
 
@@ -205,6 +205,7 @@ ht/
 
 ## Author 
 Pranith Reddy
+
 
 
 
