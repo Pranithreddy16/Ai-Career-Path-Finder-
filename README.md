@@ -43,28 +43,6 @@ A backend API system that analyzes user messages to find personalized career pat
    - Open http://localhost:3000/health
    - You should see: `{"status":"ok","message":"Career Copilot API is running"}`
 
-## API Endpoints
-
-### 1. Health Check
-```
-GET /health
-```
-Returns server status.
-
-**Response:**
-```json
-{
-  "status": "ok",
-  "message": "Career Copilot API is running"
-}
-```
-
-### 2. Analyze Career Path
-```
-POST /api/analyze-career
-```
-Analyzes a user message and returns career path recommendations.
-
 ## How It Works
 
 1. **Message Analysis**: The system analyzes user messages to extract:
@@ -137,6 +115,7 @@ ht/
 
 ## Author 
 Pranith Reddy
+
 
 
 
